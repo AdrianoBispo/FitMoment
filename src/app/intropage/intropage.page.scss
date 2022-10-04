@@ -1,0 +1,40 @@
+/* Without setting height the slides will take up the height of the slide's content */
+ion-slides {
+    height: 100%;
+    background-color: rgb(21, 25, 22);
+    color: rgb(51, 237, 0);
+
+    ion-slide {
+        display: block;
+        text-align: center;
+
+        #slide1 {
+            padding-top: 200px;
+        }
+
+        #slide2 {
+            padding-top: 200px;
+        }
+
+        #slide3 {
+            padding-top: 200px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 40px;
+            padding-top: 10px;
+            
+        }
+    
+        p {
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            padding-top: 10px;
+            
+        }
+    }
+
+  }

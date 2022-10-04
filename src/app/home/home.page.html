@@ -1,27 +1,22 @@
-<ion-header [translucent]="true">
+<ion-header [fullscreen]="true">
   <ion-toolbar>
-    <ion-title>
-      Usuários
-    </ion-title>
-
-    <ion-buttons slot="end">
-      <ion-button routerLink="/cadastro">
-        <ion-icon slot="icon-only" name="person-add-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-
+    <ion-title class="logo">FitMoment</ion-title>
   </ion-toolbar>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>Jogo do Brasil</ion-item>
+  </ion-list>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
+
+<ion-footer >
+  <ion-toolbar>
+    <ion-button class="button" color="Light">
+      <ion-icon name="home-outline" class="icone"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+  
+</ion-footer>
