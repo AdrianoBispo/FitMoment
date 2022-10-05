@@ -1,14 +1,18 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button color="dark"></ion-back-button>
     </ion-buttons>
-    <ion-title>Login</ion-title>
   </ion-toolbar>
   
 </ion-header>
 
 <ion-content>
+
+  <ion-avatar id="logo">
+    <ion-img src="https://trello.com/1/cards/624c8b48e2ab004c987c6df2/attachments/633cc8787ff73f013b42a407/download/logo%2Bfitmoment.png"></ion-img>
+  </ion-avatar>
+
   <form [formGroup]="formCadastro">
 
     <ion-item>
@@ -55,23 +59,12 @@
       </ng-container>
     </ion-item>
 
-    <ion-item>
-      <ion-label position="floating">Confirmar Senha</ion-label>
-      <ion-input placeholder="S***ha" type="password" formControlName="confirmaSenha"></ion-input>
-      <ng-container *ngFor="let erro of mensagens.confirmaSenha">
-        <span class="msg-erro"
-          *ngIf="formCadastro.get('confirmaSenha').hasError(erro.tipo) && (formCadastro.get('confirmaSenha').dirty || formCadastro.get('confirmaSenha').touched)">
-          {{erro.mensagem}}
-        </span>
-      </ng-container>
-    </ion-item>
-
-    <ion-button expand="block" (click)="salvarCadastro()">SALVAR</ion-button>
+    <ion-button id="confirmar-login" color="success" (click)="salvarCadastro()">Confirmar</ion-button>
   </form>
-  <ion-item class="texto-de-login">
-    <ion-text>Esqueceu a senha? <a href="">Mudar senha</a></ion-text>
-  <ion-text>Ainda não tem uma conta? <a routerLink="../cadastro">Crie aqui</a></ion-text>
-  </ion-item>
-  
+
+    <ion-text id="texto-de-login">
+      Esqueceu a senha? <a>Mudar senha</a> <br>
+      <span>Ainda não tem uma conta? <a routerLink="../cadastro">Crie aqui</a></span>
+    </ion-text>
 
 </ion-content>

@@ -10,12 +10,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage-angular';
 import { Drivers } from '@ionic/storage';
 
-import firebase from 'firebase';
-import { firebaseConfig } from './credentials';
-
-//Inicializar o Firebase
-firebase.initializeApp(firebaseConfig);
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
