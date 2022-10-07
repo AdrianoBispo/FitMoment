@@ -1,22 +1,104 @@
-<ion-header [fullscreen]="true">
-  <ion-toolbar>
-    <ion-title class="logo">FitMoment</ion-title>
-  </ion-toolbar>
-
-</ion-header>
-
-<ion-content>
-  <ion-list>
-    <ion-item>Jogo do Brasil</ion-item>
-  </ion-list>
-
-</ion-content>
-
-<ion-footer >
-  <ion-toolbar>
-    <ion-button class="button" color="Light">
-      <ion-icon name="home-outline" class="icone"></ion-icon>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    This is the menu content.
+    <ion-button routerLink="../intropage" color="danger">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      Sair
     </ion-button>
-  </ion-toolbar>
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-menu-button color="dark"></ion-menu-button>
+      </ion-buttons>
+
+        <ion-avatar slot="start" id="avatar-principal">
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label class="logo" color="success">Olá, User</ion-label>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-slides>
+      <ion-thumbnail class="thumbnail-slides">
+        <img class="thumbs" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+
+      <ion-thumbnail class="thumbnail-slides">
+        <img class="thumbs" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+
+      <ion-thumbnail class="thumbnail-slides">
+        <img class="thumbs" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+
+      <ion-thumbnail class="thumbnail-slides">
+        <img class="thumbs" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+
+    </ion-slides>
   
-</ion-footer>
+    <ion-item class="item-principal">
+      <ion-thumbnail slot="start">
+        <img class="thumbs" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+      <label>Alongamentos</label>
+      <ion-button color="dark" fill="clear">
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="item-principal">
+      <ion-thumbnail slot="start">
+        <img class="thumbs" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+      <label>Flexibilidade</label>
+      <ion-button color="dark" fill="clear">
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="item-principal">
+      <ion-thumbnail slot="start">
+        <img class="thumbs" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+      <label>Alongamento Geral</label>
+      <ion-button color="dark" fill="clear">
+      </ion-button>
+    </ion-item>
+
+  </ion-content>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <ion-button fill="clear">
+        <ion-icon name="home-outline" class="icone" color="success"></ion-icon>
+      </ion-button>
+      
+      <ion-button fill="clear">
+        <ion-icon name="videocam-outline" class="icone" color="success"></ion-icon>
+      </ion-button>
+  
+      <ion-button fill="clear">
+        <ion-icon name="search-outline" class="icone" color="success"></ion-icon>
+      </ion-button>
+  
+      <ion-button fill="clear">
+        <ion-icon name="settings-outline" class="icone" color="success"></ion-icon>
+      </ion-button>
+  
+      <ion-button fill="clear">
+        <ion-icon name="person-outline" class="icone" color="success"></ion-icon>
+      </ion-button>
+
+    </ion-toolbar>
+  </ion-footer>
+</div>
