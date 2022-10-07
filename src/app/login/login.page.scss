@@ -3,10 +3,14 @@ ion-header {
 
     ion-toolbar {
         border: none;
-
-        ion-buttons { ion-back-button {}}
-        
     }
+}
+
+ion-item {
+
+    ion-label {
+        color: #2ae358;
+    }    
 }
 
 #logo {
@@ -33,7 +37,11 @@ span {
     margin-left: 10px;
 }
 
-#confirmar-login {
+a {
+    text-decoration: none;
+}
+
+#confirmar {
     color: black;
     width: 50%;
     margin-left: 25%;

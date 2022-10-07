@@ -10,11 +10,10 @@
 <ion-content>
 
   <ion-avatar id="logo">
-    <ion-img src="https://trello.com/1/cards/624c8b48e2ab004c987c6df2/attachments/633cc8787ff73f013b42a407/download/logo%2Bfitmoment.png"></ion-img>
+    <ion-img src="../../assets/logo-fitmoment.png"></ion-img>
   </ion-avatar>
 
   <form [formGroup]="formCadastro">
-
     <ion-item>
       <ion-label position="floating">Nome</ion-label>
       <ion-input placeholder="Maria das Graças" formControlName="nome"></ion-input>
@@ -58,13 +57,12 @@
         </span>
       </ng-container>
     </ion-item>
-
-    <ion-button id="confirmar-login" color="success" (click)="salvarCadastro()">Confirmar</ion-button>
+    <ion-button id="confirmar" shape="round" type="submit" fill="solid" color="success">Confirmar</ion-button>
   </form>
 
     <ion-text id="texto-de-login">
-      Esqueceu a senha? <a>Mudar senha</a> <br>
-      <span>Ainda não tem uma conta? <a routerLink="../cadastro">Crie aqui</a></span>
+      Esqueceu a senha? <a>Alterar senha</a> <br>
+      <span>Ainda não tem uma conta? <a routerLink="../cadastro">Cadastre-se</a></span>
     </ion-text>
 
 </ion-content>

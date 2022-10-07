@@ -1,35 +1,23 @@
 ion-slides {
     height: 100%;
-    background-image: linear-gradient(40deg , #10a335, #3aff6b);
-    color: #ecf3f1;
+    background-color: white;
+    color: #10a335;
+    --bullet-background: rgb(25, 25, 25);
+    --bullet-background-active: #27f45a;
 
     ion-slide {
         display: block;
-        text-align: center;
-
-        #slide1 {
-            padding-top: 200px;
-        }
-
-        #slide2 {
-            padding-top: 200px;
-        }
-
-        #slide3 {
-            padding-top: 200px;
-        }
-
+        margin-top: 40%;
+        
         h1 {
             color: black;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
-            margin-top: 40px;
-            padding-top: 10px;
             
         }
     
         p {
-            color: rgb(255, 255, 255);
+            color: #10a335;
             padding: 10px;
             text-align: center;
             font-size: 16px;
@@ -38,9 +26,8 @@ ion-slides {
         }
 
         #botao-de-login {
-            border: none;
-            
-        }
+            font-size: 14px;
+            padding: max-content;
+        }  
     }
-
-  }
+}

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-intropage',
   templateUrl: './intropage.page.html',
   styleUrls: ['./intropage.page.scss'],
-  
+
 })
 
 export class IntropagePage {
@@ -12,7 +12,7 @@ export class IntropagePage {
   slideOpts = {
     initialSlide: 0,
     speed: 1200,
-  
+
   };
 
   constructor() { }

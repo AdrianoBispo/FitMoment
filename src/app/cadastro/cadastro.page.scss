@@ -3,4 +3,52 @@
     font-size: 10px;
     clear: bold;
     position: relative;
+}ion-header {
+    border: none;
+
+    ion-toolbar {
+        border: none;
+    }
+}
+
+ion-item {
+
+    ion-label {
+        color: #2ae358;
+    }    
+}
+
+#logo {
+    margin-left: 30%;
+    width: 40%;
+    height: 20%;
+}
+
+.msg-erro {
+    color: #f00;
+    font-size: 10px;
+    clear: bold;
+    position: relative;
+}
+
+#texto-de-login {
+    text-align: center;
+    font-size: 13px;
+    margin-left: 10px;
+
+}
+
+span {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#confirmar {
+    color: black;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15px;
 }
