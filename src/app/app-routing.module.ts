@@ -9,12 +9,6 @@ const routes: Routes = [
   },
 
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-
-  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
@@ -25,20 +19,8 @@ const routes: Routes = [
   },
 
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: 'aulas',
-    loadChildren: () => import('./pages/aulas/aulas.module').then( m => m.AulasPageModule)
-  },
-  {
-    path: 'search',
-    loadChildren: () => import('./pages/search/search.module').then( m => m.SearchPageModule)
-  },
-  {
-    path: 'account',
-    loadChildren: () => import('./pages/account/account.module').then( m => m.AccountPageModule)
+    path: '',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
 
 ];
