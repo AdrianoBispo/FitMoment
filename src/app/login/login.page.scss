@@ -1,22 +1,15 @@
-ion-header {
-    border: none;
-
-    ion-toolbar {
-        border: none;
-    }
-}
-
 ion-item {
-
     ion-label {
-        color: #2ae358;
+        color: #000000;
+        font-weight: bold;
     }    
 }
 
 #logo {
-    margin-left: 30%;
-    width: 40%;
-    height: 20%;
+    margin-left: 19%;
+    width: 60%;
+    height: 30%;
+    margin-top: 20px;
 }
 
 .msg-erro {
@@ -33,17 +26,32 @@ ion-item {
 
 }
 
-span {
-    margin-left: 10px;
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: rgb(17, 17, 17);
 }
 
 a {
+    color: rgb(35, 214, 95);
     text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+a:hover {
+    color: rgb(17, 94, 41);
+}
+
+a:active {
+    color: rgb(17, 94, 41);
 }
 
 #confirmar {
     color: black;
-    width: 50%;
-    margin-left: 25%;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 15px;
+    margin-bottom: 10px;
 }

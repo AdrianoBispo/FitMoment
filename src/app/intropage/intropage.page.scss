@@ -11,23 +11,28 @@ ion-slides {
         
         h1 {
             color: black;
-            font-size: 20px;
+            font-size: 21px;
             font-weight: bold;
             
         }
     
         p {
-            color: #10a335;
-            padding: 10px;
+            color: #000000;
             text-align: center;
             font-size: 16px;
-            padding-top: 10px;
+            padding: 5px;
             
         }
 
         #botao-de-login {
             font-size: 14px;
             padding: max-content;
-        }  
+        }
+        
+        ion-avatar {
+            margin-left: 19%;
+            width: 61%;
+            height: 29%;
+        }
     }
 }

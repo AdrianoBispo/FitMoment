@@ -2,7 +2,6 @@ import { Usuario } from './../models/Usuario';
 import { comparaValidator } from './../../validators/compara-validators';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CpfValidator } from 'src/validators/cpf-validators';
 
 @Component({
   selector: 'app-cadastro',
@@ -17,11 +16,7 @@ export class CadastroPage implements OnInit {
   mensagens = {
     nome: [
       { tipo: 'required', mensagem: 'O campo Nome é obrigatório.' },
-      { tipo: 'minlength', mensagem: 'O nome deve ter pelo menos 3 caracteres.' },
-    ],
-    cpf: [
-      { tipo: 'required', mensagem: 'O campo CPF é obrigatório.' },
-      { tipo: 'invalido', mensagem: 'CPF Inválido.' },
+      { tipo: 'minlength', mensagem: 'O nome deve ter pelo menos 10 caracteres.' },
     ],
     email: [
       { tipo: 'required', mensagem: 'O campo E-mail é obrigatório.' },
@@ -42,11 +37,10 @@ export class CadastroPage implements OnInit {
 
   constructor(private formBuilder: FormBuilder) {
     this.formCadastro = this.formBuilder.group({
-      nome: ['', Validators.compose([Validators.required, Validators.minLength(3)])],
-      cpf: ['', Validators.compose([Validators.required, CpfValidator.cpfValido])],
+      nome: ['', Validators.compose([Validators.required, Validators.minLength(10)])],
       email: ['', Validators.compose([Validators.required, Validators.email])],
-      senha: ['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(8)])],
-      confirmaSenha: ['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(8)])]
+      senha: ['', Validators.compose([Validators.required, Validators.minLength(6)])],
+      confirmaSenha: ['', Validators.compose([Validators.required, Validators.minLength(6)])]
     }, {
       validator: comparaValidator('senha', 'confirmaSenha')
     });
@@ -58,7 +52,6 @@ export class CadastroPage implements OnInit {
   salvarCadastro() {
     if(this.formCadastro.valid){
       this.usuario.nome = this.formCadastro.value.nome;
-      this.usuario.cpf = this.formCadastro.value.cpf;
       this.usuario.email = this.formCadastro.value.email;
       this.usuario.senha = this.formCadastro.value.senha;
     }

@@ -1,31 +1,49 @@
-<ion-content>
-    <ion-slides pager="true" [options]="slideOpts"> 
-        <ion-slide class="container ion-text-center">
-            <ion-img id="slide1" src="../../assets/icon/pessoa-sentada-trabalhando.jpg"></ion-img>
-            <h1>Profissionais Qualificados</h1>
-            <p>O lugar perfeito para encontrar profissionais para gestão de ginástica laboral.</p>
-        </ion-slide>
+<ion-app>
+    <ion-content>
+        <ion-slides pager="true" [options]="slideOpts"> 
+            <ion-slide class="container ion-text-center">
+                <ion-img id="slide1" src="../../assets/nossaEquipe-trabalhando.png"></ion-img>
+                <ion-text>
+                    <h1>Profissionais Qualificados</h1>
+                    <p>Encontre profissionais qualificados em ginástica laboral.</p>
+                </ion-text>
+            </ion-slide>
+    
+            <ion-slide class="container ion-text-center">
+                <ion-img id="slide2" src="../../assets/checklist.png"></ion-img>
+                <ion-text>
+                    <h1>Agende seu treino</h1>
+                    <p>Aqui é possível agendar o horário para você realizar seu treino.</p>
+                </ion-text>
+            </ion-slide>
+    
+            <ion-slide class="container ion-text-center">
+                <ion-img id="slide3" src="../../assets/feedback.png"></ion-img>
+                <ion-text>
+                    <h1>Conexão com profissionais</h1>
+                    <p>Oferecemos a possibilidade de comunicação com profissionais de Ed. Física.</p>
+                </ion-text>
+            </ion-slide>
+          
+            <ion-slide class="container ion-text-center">
+                <ion-img id="slide4" src="../../assets/homem-mulher-quebracabeça.png"></ion-img>
+                <ion-text>
+                    <h1>Central de Ajuda</h1>
+                    <p>Fale conosco, tire suas dúvidas, nos dê sugestões.</p>
+                </ion-text>
+            </ion-slide>
 
-        <ion-slide class="container ion-text-center">
-            <ion-img id="slide2" src="../../assets/icon/checklist.svg"></ion-img>
-            <h1>Fácil Uso</h1>
-            <p>Simples e moderno qualquer usuário consiguir usar.</p>
-        </ion-slide>
+            <ion-slide class="container ion-text-center">
+                <ion-avatar>
+                    <ion-img id="logo" src="../../assets/icon/logo-fitmoment.png"></ion-img>
+                </ion-avatar>
+                <h1>Seja Bem-vindo</h1>
+                <ion-button fill="solid" shape="round" color="success" id="botao-de-login" routerLink="../login">
+                    Vamos lá
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </ion-button>
+            </ion-slide>
 
-        <ion-slide class="container ion-text-center">
-            <ion-img id="slide3" src="../../assets/icon/homem-contente.jpg"></ion-img>
-            <h1>Sinta-se Bem</h1>
-            <p>Praticar ginastica laboral trás alegria, melhorando seu desempenho no trabalho.</p>
-        </ion-slide>
-      
-        <ion-slide class="container ion-text-center">
-            <ion-img id="slide4" src="../../assets/icon/feedback.svg"></ion-img>
-            <h1>Central de Ajuda</h1>
-            <p>Fale Conosco, tire suas dúvidas, nos dê sugestões.</p>
-            <ion-button fill="solid" shape="round" color="success" id="botao-de-login" routerLink="../login">
-                Vamos lá
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-            </ion-button>
-        </ion-slide>
-    </ion-slides>
-</ion-content>
+        </ion-slides>
+    </ion-content>
+</ion-app>

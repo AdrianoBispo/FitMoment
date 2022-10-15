@@ -1,25 +1,26 @@
 <ion-app>
   <ion-header>
     <ion-toolbar>
-      <ion-title>Aulas</ion-title>
-      <ion-segment value="preparatoria">
-        <ion-segment-button value="preparatoria" color="success">
-          Préparatoria
-        </ion-segment-button>
-        <ion-segment-button value="Compensatória" color="success">
-          Compensatória
-        </ion-segment-button>
-        <ion-segment-button value="relaxamento" color="success">
-          Relaxamento
-        </ion-segment-button>
-      </ion-segment>
+      <ion-title>Exercícios</ion-title>      
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
-    <ion-card>
+    <ion-segment (ionChange)="segmentChanged($event)" [value]="valueSelected">
+      <ion-segment-button value="preparatoria">
+        <ion-label>Preparatoria</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="compensatoria">
+        <ion-label>Compensatoria</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="relaxamento">
+        <ion-label>Relaxamento</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <ion-card *ngIf="valueSelected === 'preparatoria'">
       <ion-card-header>
-        <ion-card-title>Alongamento de Pernas</ion-card-title>
+        <ion-card-title>Preparatoria</ion-card-title>
       </ion-card-header>
     
       <ion-card-content>
@@ -29,7 +30,7 @@
       </ion-card-content>
     </ion-card>
     
-    <ion-card>
+    <ion-card *ngIf="valueSelected === 'compensatoria'">
       <ion-card-header>
         <ion-card-title>Flexibilidade</ion-card-title>
       </ion-card-header>
@@ -41,9 +42,9 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card>
+    <ion-card *ngIf="valueSelected === 'relaxamento'">
       <ion-card-header>
-        <ion-card-title>Alongamento Geral</ion-card-title>
+        <ion-card-title>Relaxamento</ion-card-title>
       </ion-card-header>
     
       <ion-card-content>

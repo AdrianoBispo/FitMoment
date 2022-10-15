@@ -1,68 +1,50 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button color="dark"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
+<ion-app>
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button color="dark"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
   
-</ion-header>
-
-<ion-content>
-
-  <ion-avatar id="logo">
-    <ion-img src="../../assets/icon/logo-fitmoment.png"></ion-img>
-  </ion-avatar>
-
-  <form [formGroup]="formCadastro">
-    <ion-item>
-      <ion-label position="floating">Nome</ion-label>
-      <ion-input placeholder="Maria das Graças" formControlName="nome"></ion-input>
-      <ng-container *ngFor="let erro of mensagens.nome">
-        <span class="msg-erro"
-          *ngIf="formCadastro.get('nome').hasError(erro.tipo) && (formCadastro.get('nome').dirty || formCadastro.get('nome').touched)">
-          {{erro.mensagem}}
-        </span>
-      </ng-container>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">CPF</ion-label>
-      <ion-input placeholder="000.111.222-33" formControlName="cpf"></ion-input>
-      <ng-container *ngFor="let erro of mensagens.cpf">
-        <span class="msg-erro"
-          *ngIf="formCadastro.get('cpf').hasError(erro.tipo) && (formCadastro.get('cpf').dirty || formCadastro.get('cpf').touched)">
-          {{erro.mensagem}}
-        </span>
-      </ng-container>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">E-mail</ion-label>
-      <ion-input placeholder="exemplo@empresa.com" formControlName="email"></ion-input>
-      <ng-container *ngFor="let erro of mensagens.email">
-        <span class="msg-erro"
-          *ngIf="formCadastro.get('email').hasError(erro.tipo) && (formCadastro.get('email').dirty || formCadastro.get('email').touched)">
-          {{erro.mensagem}}
-        </span>
-      </ng-container>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">Senha</ion-label>
-      <ion-input placeholder="S***ha" type="password" formControlName="senha"></ion-input>
-      <ng-container *ngFor="let erro of mensagens.senha">
-        <span class="msg-erro"
-          *ngIf="formCadastro.get('senha').hasError(erro.tipo) && (formCadastro.get('senha').dirty || formCadastro.get('senha').touched)">
-          {{erro.mensagem}}
-        </span>
-      </ng-container>
-    </ion-item>
-    <ion-button id="confirmar" shape="round" type="submit" fill="solid" color="success" routerLink="../home">Confirmar</ion-button>
-  </form>
-
-    <ion-text id="texto-de-login">
-      Esqueceu a senha? <a>Alterar senha</a> <br>
-      <span>Ainda não tem uma conta? <a routerLink="../cadastro">Cadastre-se</a></span>
-    </ion-text>
-
-</ion-content>
+  <ion-content>
+  
+    <ion-avatar id="logo">
+      <ion-img src="../../assets/icon/logo-fitmoment.png"></ion-img>
+    </ion-avatar>
+  
+    <form [formGroup]="formCadastro">
+      <ion-item>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input placeholder="Ex. exemplo@empresa.com" formControlName="email" [clearInput]="true"></ion-input>
+        <ng-container *ngFor="let erro of mensagens.email">
+          <span class="msg-erro"
+            *ngIf="formCadastro.get('email').hasError(erro.tipo) && (formCadastro.get('email').dirty || formCadastro.get('email').touched)">
+            {{erro.mensagem}}
+          </span>
+        </ng-container>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input placeholder="6 Caracteres" type="password" formControlName="senha" [clearInput]="true"></ion-input>
+        <ng-container *ngFor="let erro of mensagens.senha">
+          <span class="msg-erro"
+            *ngIf="formCadastro.get('senha').hasError(erro.tipo) && (formCadastro.get('senha').dirty || formCadastro.get('senha').touched)">
+            {{erro.mensagem}}
+          </span>
+        </ng-container>
+      </ion-item>
+      <ion-button id="confirmar" shape="round" type="submit" fill="solid" color="success" routerLink="../tabs">Login
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-button>
+    </form>
+  
+      <ion-text id="texto-de-login">
+        <p>Esqueceu a senha? <a>Alterar senha</a></p>
+        <p>Não tem uma conta? <a routerLink="../cadastro">Cadastre-se</a></p>
+      </ion-text>
+  
+  </ion-content>
+  
+</ion-app>

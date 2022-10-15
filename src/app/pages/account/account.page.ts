@@ -10,6 +10,7 @@ export class AccountPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

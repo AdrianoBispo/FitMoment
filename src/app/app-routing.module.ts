@@ -7,6 +7,11 @@ const routes: Routes = [
     path: 'intropage',
     loadChildren: () => import('./intropage/intropage.module').then( m => m.IntropagePageModule)
   },
+  {
+    path: '',
+    redirectTo: 'intropage',
+    pathMatch: 'full',
+  },
 
   {
     path: 'login',

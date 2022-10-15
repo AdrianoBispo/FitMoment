@@ -18,14 +18,10 @@ const routes: Routes = [
       },
 
       {
-        path: 'search',
-        loadChildren: () => import('../pages/search/search.module').then(m => m.SearchPageModule)
-      },
-
-      {
         path: 'account',
         loadChildren: () => import('../pages/account/account.module').then(m => m.AccountPageModule)
       },
+
       {
         path: '',
         redirectTo: '/tabs/home',
