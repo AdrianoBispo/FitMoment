@@ -28,7 +28,17 @@ ion-slides {
             font-size: 14px;
             padding: max-content;
         }
-        
+            
+        ion-buttons {
+            justify-content: right;
+            padding-top: 22px;
+            padding-right: 15px;
+
+            #botao-pular {
+                font-size: 16px;
+            }
+        }
+
         ion-avatar {
             margin-left: 19%;
             width: 61%;
