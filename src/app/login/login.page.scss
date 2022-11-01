@@ -1,0 +1,136 @@
+ion-content {
+    background-color: #fff;
+
+    ion-back-button {
+        padding: 30px 13px;
+    }
+
+    ion-item {
+        margin: 10px 40px;
+        ion-label {
+            color: #000000;
+            font-size: 20px;
+        }
+    }
+
+    #logo {
+        justify-content: center;
+        margin-left: 19%;
+        width: 60%;
+        height: 30%;
+        margin-top: 15%;
+    }
+        
+    .msg-erro {
+        color: #f00;
+        font-size: 13px;
+    }
+        
+    #texto-de-login {
+        text-align: center;
+        font-size: 13px;
+        margin-left: 10px;
+        
+    }
+        
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        color: rgb(17, 17, 17);
+    }
+        
+    span {
+        color: rgb(35, 214, 95);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 19px;
+    }
+        
+    span:hover {
+        color: rgb(17, 94, 41);
+    }
+        
+    span:active {
+        color: rgb(17, 94, 41);
+    }
+        
+    #confirmar {
+        font-size: 16px;
+        height: 40px;
+        color: black;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+}
+    
+
+
+/*@media (prefers-color-scheme: dark) {
+ion-content {
+    background-color: #fff;
+
+    ion-back-button {
+        padding: 30px 13px;
+    }
+
+    ion-item {
+        margin: 10px 40px;
+        ion-label {
+            color: #000000;
+            font-size: 20px;
+        }
+    }
+
+    #logo {
+        justify-content: center;
+        margin-left: 19%;
+        width: 60%;
+        height: 30%;
+        margin-top: 15%;
+    }
+        
+    .msg-erro {
+        color: #f00;
+        font-size: 13px;
+    }
+        
+    #texto-de-login {
+        text-align: center;
+        font-size: 13px;
+        margin-left: 10px;
+        
+    }
+        
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        color: rgb(17, 17, 17);
+    }
+        
+    span {
+        color: rgb(35, 214, 95);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 19px;
+    }
+        
+    span:hover {
+        color: rgb(17, 94, 41);
+    }
+        
+    span:active {
+        color: rgb(17, 94, 41);
+    }
+        
+    #confirmar {
+        font-size: 16px;
+        height: 40px;
+        color: black;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+} */

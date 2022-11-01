@@ -1,0 +1,7 @@
+{
+  "name": "FitMoment",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

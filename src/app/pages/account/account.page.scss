@@ -1,0 +1,31 @@
+a {
+  text-decoration: none;
+  color: black;
+  padding-left: 7px;
+}
+  
+a:hover {
+  color: rgb(25, 221, 103);
+}
+
+a:active {
+  color: rgb(25, 221, 103);
+}
+
+/*@media (prefers-color-scheme: dark) {
+  a {
+    text-decoration: none;
+    color: white;
+    padding-left: 7px;
+
+  }
+
+  a:hover {
+    color: rgb(25, 221, 103);
+  }
+
+  a:active {
+    color: rgb(25, 221, 103);
+  }
+}
+*/
