@@ -35,9 +35,14 @@
         <ion-icon name="arrow-forward-outline"></ion-icon>
       </ion-button>
     </form>
-  
+
+      <ion-item color="light" (click)="signInWithGoogle()">
+        <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Sig In With Google"/>
+        <ion-label>Sign In With Google</ion-label>
+      </ion-item>
+
       <ion-text id="texto-de-login">
-        <p>Esqueceu a senha? <span>Alterar senha</span></p>
+        <p>Esqueceu a senha? <span routerLink="../forgot-password">Alterar Senha</span></p>
         <p>Não tem uma conta? <span routerLink="../cadastro">Cadastre-se</span></p>
       </ion-text>
   
