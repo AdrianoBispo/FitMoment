@@ -9,7 +9,7 @@
     
   
     <form method="post" action="../" [formGroup]="formCadastro">
-      <ion-item>
+      <!-- <ion-item>
         <ion-label position="floating">Nome</ion-label>
         <ion-input placeholder="Ex. Maria Soledade Barbosa" formControlName="nome" [clearInput]="true" value="nome"></ion-input>
         <ng-container *ngFor="let erro of mensagens.nome">
@@ -18,11 +18,11 @@
             {{erro.mensagem}}
           </span>
         </ng-container>
-      </ion-item>
+      </ion-item> -->
   
       <ion-item>
         <ion-label position="floating">E-mail</ion-label>
-        <ion-input placeholder="Ex. exemplo@ong.com" formControlName="email" [clearInput]="true" value="email"></ion-input>
+        <ion-input placeholder="Ex. exemplo@ong.com" formControlName="email" [clearInput]="true" value="email" [(ngModel)]="email"></ion-input>
         <ng-container *ngFor="let erro of mensagens.email">
           <span class="msg-erro"
             *ngIf="formCadastro.get('email').hasError(erro.tipo) && (formCadastro.get('email').dirty || formCadastro.get('email').touched)">
@@ -33,7 +33,7 @@
   
       <ion-item>
         <ion-label position="floating" value="senha">Senha</ion-label>
-        <ion-input placeholder="6 Caracteres" type="password" formControlName="senha" [clearInput]="true"></ion-input>
+        <ion-input placeholder="6 Caracteres" type="password" formControlName="password" [clearInput]="true" [(ngModel)]="password"></ion-input>
         <ng-container *ngFor="let erro of mensagens.senha">
           <span class="msg-erro"
             *ngIf="formCadastro.get('senha').hasError(erro.tipo) && (formCadastro.get('senha').dirty || formCadastro.get('senha').touched)">
@@ -42,18 +42,7 @@
         </ng-container>
       </ion-item>
   
-      <ion-item>
-        <ion-label position="floating">Confirmar Senha</ion-label>
-        <ion-input placeholder="6 Caracteres" type="password" formControlName="confirmaSenha" [clearInput]="true"></ion-input>
-        <ng-container *ngFor="let erro of mensagens.confirmaSenha">
-          <span class="msg-erro"
-            *ngIf="formCadastro.get('confirmaSenha').hasError(erro.tipo) && (formCadastro.get('confirmaSenha').dirty || formCadastro.get('confirmaSenha').touched)">
-            {{erro.mensagem}}
-          </span>
-        </ng-container>
-      </ion-item>
-  
-      <ion-button id="confirmar" shape="round" fill="solid" color="success" type="submit" (click)="salvarCadastro()">Criar
+      <ion-button id="confirmar" shape="round" fill="solid" color="success" type="button" (click)="register()">Registrar
         <ion-icon name="arrow-forward-outline"></ion-icon>
       </ion-button>
     </form>

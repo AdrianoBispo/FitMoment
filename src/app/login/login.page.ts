@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Usuario } from '../models/Usuario';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from '../shared/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -10,36 +10,43 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginPage implements OnInit {
 
   formCadastro: FormGroup;
-  usuario: Usuario = new Usuario();
+  // eslint-disable-next-line @typescript-eslint/no-inferrable-types
+  email: string = '';
+  // eslint-disable-next-line @typescript-eslint/no-inferrable-types
+  password: string = '';
 
   mensagens = {
     email: [
       { tipo: 'required', mensagem: 'O campo E-mail é obrigatório.' },
       { tipo: 'email', mensagem: 'E-mail Inválido.' },
     ],
-    senha: [
+    password: [
       { tipo: 'required', mensagem: 'O campo Senha é obrigatório.' },
       { tipo: 'minlength', mensagem: 'A senha deve ter pelo menos 6 caracteres.', },
       { tipo: 'maxlength', mensagem: 'A senha deve ter no máximo 8 caractéres.' },
     ]
   };
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private auth: AuthService) {
 
     this.formCadastro = this.formBuilder.group({
       email: ['', Validators.compose([Validators.required, Validators.email])],
-      senha: ['', Validators.compose([Validators.required, Validators.minLength(6)])],
+      password: ['', Validators.compose([Validators.required, Validators.minLength(6)])],
     });
 
   }
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 
-  salvarCadastro() {
+  login() {
+
     if(this.formCadastro.valid){
-      this.usuario.email = this.formCadastro.value.email;
-      this.usuario.senha = this.formCadastro.value.senha;
+      this.email = this.formCadastro.value.email;
+      this.password = this.formCadastro.value.password;
     }
+
+    this.auth.login(this.email, this.password);
+
   }
 
 }

@@ -8,8 +8,9 @@ import { SplashScreen } from '@awesome-cordova-plugins/splash-screen/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { IonicStorageModule } from '@ionic/storage-angular';
-import { Drivers } from '@ionic/storage';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from './../environments/environment';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,9 +19,8 @@ import { Drivers } from '@ionic/storage';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    IonicStorageModule.forRoot({
-      driverOrder: [Drivers.IndexedDB, Drivers.LocalStorage]
-    })
+    AngularFireModule.initializeApp(environment.firebase),
+    FormsModule
   ],
   providers: [
     SplashScreen,
