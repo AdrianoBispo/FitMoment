@@ -14,15 +14,15 @@
 
   - [👨🏾‍🎨 Protótipo do Figma](#prototipo-figma)
 
-  - [📲 Aplicativo FitMomemnt](#aplicativo-fitmoment)
+  - [📲 Aplicativo FitMomemnt](#app-fitmoment)
     - [👨🏾‍🔧 Funcionalidades](#funcionalidades)
     - [📱 Tela de Introdução](#tela-de-introducao)
     - [📱 Tela de Login](#tela-de-login)
     - [📱 Telas Principais](#telas-principais)
 
   - [💻 Tecnologias Utilizadas](#tecnologias-utilizadas)
-    - [📝 Pré Requisitos](#pre-requisitos)
-    - [▶ Rodando Projeto](#rodando-projeto)
+    - [⏬ Instalação](#instalacao)
+    - [▶ Rodando App](#rodando-app)
 
   - [👨🏾‍💻 Equipe do Projeto](#equipe)
 
@@ -32,7 +32,7 @@
   <img src="https://cdn.discordapp.com/attachments/743927816021737565/1035715790969786480/ginastica_Laboral.jpg.png" height="550px" width="100%">
   <p>
     <b>
-      O projeto FitMoment, com base no ODS 3 da ONU (saúde e bem-estar), busca combater condições de desconforto em ambiente de trabalho, pelo qual, trabalhadores do dia-a-dia passam.
+      O projeto FitMoment, com base no ODS 3 da ONU (saúde e bem-estar), busca combater condições de desconforto em ambiente de trabalho, pelo qual, trabalhadores do         dia-a-dia passam.
     </b>
   </p>
 
@@ -40,7 +40,7 @@
 
   <h2 id="problematica">❗ Problemática</h2>
   <p>
-    Os principais problemas dos funcionários que fazem esforço repetitivo são: Ergonomia, Estresse, mal-estar, má postura, problemas de saúde; essas condições geradas afetam diretamente à empresa, no caso da produção e empregabilidade. Dessa maneira, a empresa passará por conflitos desnecessários, como: demissão, contratação, mudança de itinerários, perda de clientes, baixas no comércio, entre outras ações. Uma pesquisa realizada pelo Sistema Fiep com dados e indicadores de 2016 e 2018 de uma empresa com aproximadamente 80 funcionários apontou uma queda significativa de 55,5% nos afastamentos do trabalho por motivos de problemas de saúde.
+    Os principais problemas dos funcionários que fazem esforço repetitivo são: Ergonomia, Estresse, mal-estar, má postura, problemas de saúde; essas condições geradas     afetam diretamente à empresa, no caso da produção e empregabilidade. Dessa maneira, a empresa passará por conflitos desnecessários, como: demissão, contratação,       mudança de itinerários, perda de clientes, baixas no comércio, entre outras ações. Uma pesquisa realizada pelo Sistema Fiep com dados e indicadores de 2016 e 2018     de uma empresa com aproximadamente 80 funcionários apontou uma queda significativa de 55,5% nos afastamentos do trabalho por motivos de problemas de saúde.
   </p>
   <br>
 
@@ -59,7 +59,7 @@
   <h2 id="nossa-ideia">💡 Nossa Ideia</h2>
 
   <p>
-     Através de nosso aplicativo, os funcionários irão poder praticar os exercícios propostos e monitorar, para à empresa, à prática durante o período propício; com sugestões de exercícios para problemas específicos. 
+     Através de nosso aplicativo, os funcionários irão poder praticar os exercícios propostos e monitorar, para à empresa, à prática durante o período propício; com        sugestões de exercícios para problemas específicos. 
   </p>
 
   <h4>Os benefícios da ginástica laboral para sua empresa são diversos. Segue abaixo alguns desses benefícios:</h4>
@@ -81,9 +81,10 @@
   <h1 id="prototipo-figma">👨🏾‍🎨 Protótipo do Figma</h1>
   <img src="https://cdn.discordapp.com/attachments/743927816021737565/1035715750939332638/banner_readme.png">
   
-  <a href="https://www.figma.com/proto/0tP1x3ZWl4CebcvS4uf5LW/FitMoment?scaling=scale-down&page-id=0%3A1&node-id=10%3A2&starting-point-node-id=1%3A2">Clique aqui</a> para abri-lo no Figma.
+  <a href="https://www.figma.com/proto/0tP1x3ZWl4CebcvS4uf5LW/FitMoment?scaling=scale-down&page-id=0%3A1&node-id=10%3A2&starting-point-node-id=1%3A2">Clique aqui</a>     para abri-lo no Figma.
   <br><br>
-  <h1 id="aplicativo-fitmoment">📱 Aplicativo FitMoment</h1>
+  
+  <h1 id="app-fitmoment">📱 Aplicativo FitMoment</h1>
   
   <h2 id="funcionalidades">👨🏾‍🔧 Funcionalidades</h2>
 
@@ -108,8 +109,7 @@
   <img src="https://cdn.discordapp.com/attachments/743927816021737565/1034652375123767427/telas-principais.gif">
   <br><br>
 
-  <h1 id="tecnologias-utilizadas">💻 Tecnologias Utilizadas</h1>
-                    <br><br><br>
+  <h2 id="tecnologias-utilizadas">💻 Tecnologias Utilizadas</h2><br>
   <div>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="angular" width="100px" height="60px"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" alt="ionic" width="100px" height="60px"/>
@@ -117,31 +117,56 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" width="100px" height="60px"/>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Cordova-logo-by-gengns.svg/800px-Cordova-logo-by-gengns.svg.png?20150803125240" 
          alt="cordova" width="150px" height="70px"/>
-  </div> <br><br>
-
-  <h2 id="pre-requisitos">📝 Pré-Requisitos</h2>
-  <h4 id="aviso">⚠AVISO</h4>
-  <p><b>
-     Embora o Ionic sendo uma ferramenta de desenvolvimento de app híbrido, nossa plataforma, o FitMoment, tem como foco os dispositivos Android (devido a falta de estrutura). Portanto, caso você queira testa-lo em seu dispositivo iOS, haverá falta de compatibilidade.
-    </b>
-  </p>
-
-  Para executar o projeto em sua máquina, será necessário fazer a instalação das seguintes tecnologias:
-  - `NodeJS:` para rodar o comando <b>npm</b> e fazer a instalação do <b>Ionic</b>, necessitamos da instalação do <b>NodeJS</b>. [Clique aqui](https://nodejs.org/en/) para fazer a instalação;
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" alt="gradle" width="100px" height="60px"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" alt="firebase" width="100px" height="60px"/>
+  </div>
   
-  - `Ionic:` depois de realizar a instalação do <b>NodeJS</b> chegou a hora de fazer a instalação do Ionic. Em sua máquina, execute o comando abaixo:
-  ```
-  npm install -g @ionic/cli
-  ```
+  <h3> Descrição:</h3>
+    
+  - `NodeJS:` Ferramenta <b>`Obrigatório`</b> para fazer a instalação de pacotes utilizando o <b>npm</b> e rodar o app.
   
-  - `Cordova:` em seguida, após ter realizado a  instalação do <b>NodeJS</b> e do <b></b>Ionic faremos a instalação do <b>Cordova</b>, para que assim, possa testar em seu dispositivo, ou então, em algum simulador Android.
+  - `Angular:` No nosso projeto, utilizamos o `Angular` que combina a experiência principal do Ionic com as ferramentas e APIs personalizadas.
+  
+  - `Ionic:` Framework trabalhado em sala de aula e utilizado em nossa aplicação por conta de sua documentação de fácil leitura, pela quantidade de
+  APIs disponíveis e por criar aplicativos móveis de alta qualidade e desempenho usando tecnologias da Web com integrações para estruturas populares como
+  Angular, React e Vue. Nesse caso, como mencionado anteriormente, utilizamos o Angular.
+  
+  - `Typescript:` Linguagem para criação da parte lógica do projeto.
+  
+  - `Sass:` explicação...
+  
+  - `Cordova:` explicação...
+  
+  - `Gradle:` explicação...
+  
+  - `Firebase:` explicação...
+  
+  <br>
 
-  Se quiser testar as instalações, rode os comandos abaixo separadamente para mostrar as respectivas versões do:
+  <h2 id="instalacao">⏬ Instalação</h2>
+  <h4 id="aviso">⚠AVISO⚠</h4>
+
+  Embora o Ionic sendo uma ferramenta de desenvolvimento de app híbrido, nossa plataforma, o FitMoment, tem como foco os dispositivos Android (devido a falta de
+  estrutura). Portanto, caso você queira testa-lo em seu dispositivo iOS, haverá falta de compatibilidade.
+
+  Para executar o app em sua máquina será necessário, primeiramente, fazer a instalação do [NodeJS](https://nodejs.org/en/), para em seguida, rodar o comando
+  <b>npm</b> e fazer a instalação do <b>Ionic</b>.
+  
+  Depois de fazer a instalação do `NodeJS` rode os comandos abaixo, separadamente, para fazer a verificação da versão do `NodeJS` e do `npm`:
 
   ```
   node --version
-  ionic --version
+  npm --version
   ```
+  
+  Depois de realizar a instalação do <b>NodeJS</b> chegou a hora de fazer a instalação do Ionic. Em sua máquina, execute o comando abaixo:
+  ```
+  npm install -g @ionic/cli
+  ```
+  Em seguida, após ter realizado a  instalação do <b>NodeJS</b> e do <b></b>Ionic faremos a instalação do <b>Cordova</b>, para que assim, possa testar em seu
+  dispositivo, ou então, em algum simulador Android.
+
+  Se quiser testar as instalações, 
 
   Então com o `npm` instalado podemos instalar o `ionic` e checar a versão:
   ```
@@ -149,7 +174,7 @@
   ionic --version
   ```
 
-  <h2 id="rodando-projeto">▶ Rodando Projeto</h2>
+  <h2 id="rodando-app">▶ Rodando App</h2>
 
   Para podermos rodar o projeto no navegador(webview):
   ```
@@ -170,9 +195,13 @@
   
   O comando abaixo com a flag `-l` permite que a cada atualização realizada no código do projeto seja atualizada no celular.
   
-</main> <br>
+</main>
 
-<h2 id="equipe">👨🏾‍💻 Equipe do Projeto</h2>
+<footer>
+  
+  <h2 id="equipe">👨🏾‍💻 Equipe do Projeto</h2>
   
 | [<img src="https://avatars.githubusercontent.com/u/83666455?v=4" width="105px" height="105px"><br><sub>Adriano Vinícius (Programador)</sub>](https://www.linkedin.com/in/adriano-vin%C3%ADcius-bispoda-silva-85293a240/) | [<img src="https://cdn.discordapp.com/attachments/743927816021737565/1033537623379161198/IMG-20221022-WA0041.jpg" width="105px" height="105px"><br><sub>Pedro Henrique (Designer)</sub>](https://www.linkedin.com/in/pedro-henrique-125a49184/) | [<img src="https://cdn.discordapp.com/attachments/743927816021737565/1034631073172299796/IMG-20221025-WA0066.jpg" width="105px" height="105px"><br><sub>João Emanuel (Pesquisas)</sub>](https://www.instagram.com/joaoo_em/) |
 |----------|----------|----------|
+
+</footer>
