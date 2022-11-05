@@ -5,7 +5,7 @@
 </header>
 
 <main>
-  <h1 id="topicos">📜 Tópicos</h1>
+  <h3 id="topicos">📜 Tópicos</h3>
 
   - [👨🏾‍🏫 Sobre o Projeto](#sobre-o-projeto)
     - [❗ Problemática](#problematica)
@@ -91,8 +91,6 @@
   `🧑🏾 Perfil de Usuário:` Realizar cadastro dos usuários, podendo ser pacientes ou profissional de Ed. Física.
 
   `🛅 Armazenamento de Dados:` Armazenar dados do usuário.
-
-  `🔁 Frequência do Usuário:` Mostrar a frequencia de uso que nossos usuários mantem no uso de nossa plataforma.
 
   `🤝🏾 Interação entre Usuários:` Bate-papo que conecta o nosso cliente e o profissional de Ed. Física.
   <br><br>
