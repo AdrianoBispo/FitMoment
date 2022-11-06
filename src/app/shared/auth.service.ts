@@ -14,17 +14,9 @@ export class AuthService {
   login(email: string, password: string){
     this.fireauth.signInWithEmailAndPassword(email, password).then(res => {
       localStorage.setItem('token', 'true');
-
-      // eslint-disable-next-line eqeqeq
-      if(res.user?.emailVerified == true){
-        this.router.navigate(['tabs']);
-      } else {
-        this.router.navigate(['/varify-email']);
-      }
-
+      this.router.navigate(['tabs']);
     }, err => {
         alert(err.message);
-        this.router.navigate(['/login']);
     });
   }
 
@@ -33,28 +25,9 @@ export class AuthService {
     this.fireauth.createUserWithEmailAndPassword(email, password).then(res => {
       alert('Registration successful');
       this.router.navigate(['/login']);
-      this.sendEmailForVarification(res.user);
     }, err => {
       alert(err.message);
         this.router.navigate(['/cadastro']);
-    });
-  }
-
-  //forgotPassword user
-  forgotPassword(email: string){
-    this.fireauth.sendPasswordResetEmail(email).then(() => {
-      this.router.navigate(['/varify-email']);
-    }, err => {
-      alert('Something went wrong');
-    });
-  }
-
-  //E-mail Verification
-  sendEmailForVarification(user: any) {
-    user.sendEmailVarification().then((res: any) => {
-      this.router.navigate(['/varify-email']);
-    }, (err: any) => {
-      alert('Something went wrong. Not able to sent mail to your email.');
     });
   }
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 import { AuthService } from '../shared/auth.service';
 
 @Component({
@@ -8,6 +7,7 @@ import { AuthService } from '../shared/auth.service';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
+
 export class LoginPage implements OnInit {
 
   formCadastro: FormGroup;
@@ -28,7 +28,7 @@ export class LoginPage implements OnInit {
     ]
   };
 
-  constructor(private formBuilder: FormBuilder, private auth: AuthService, private router: Router) {
+  constructor(private formBuilder: FormBuilder, private auth: AuthService) {
 
     this.formCadastro = this.formBuilder.group({
       email: ['', Validators.compose([Validators.required, Validators.email])],
