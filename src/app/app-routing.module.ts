@@ -10,7 +10,7 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: 'intropage',
+    redirectTo: 'tabs',
     pathMatch: 'full',
   },
 
