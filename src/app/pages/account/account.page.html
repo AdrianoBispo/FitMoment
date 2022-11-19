@@ -2,65 +2,36 @@
   <ion-menu contentId="account-content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Menu</ion-title>
+        <ion-title>Configurações</ion-title>
       </ion-toolbar>
     </ion-header>
+
     <ion-content class="ion-padding">
       <ion-list>
         <ion-item>
           <ion-icon name="person-circle-outline" color="dark"></ion-icon>
-          <ion-label><a >Editar Perfil</a></ion-label>
+          <ion-label class="options-menu">Editar Perfil</ion-label>
         </ion-item>
         
         <ion-item>
-          <ion-icon name="barbell-outline" color="dark"></ion-icon>
-          <ion-label><a routerLink="../aulas">Exercícios</a></ion-label>
+          <ion-icon name="moon" color="dark"></ion-icon>
+          <ion-label class="options-menu">Modo Escuro</ion-label>
+          <ion-toggle color="light"></ion-toggle>
         </ion-item>
-
-        <ion-item>
-          <ion-icon name="settings-outline" color="dark"></ion-icon>
-          <ion-label><a id="open-config">Configurações</a></ion-label>
-        </ion-item>
-
-        <ion-modal #modal trigger="open-config" [presentingElement]="presentingElement">
-          <ng-template>
-            <ion-header>
-              <ion-toolbar>
-                <ion-title>Configurações</ion-title>
-                <ion-buttons slot="end">
-                  <ion-button (click)="modal.dismiss()"><ion-icon name="close-outline" id="botao-fechar"></ion-icon></ion-button>
-                </ion-buttons>
-              </ion-toolbar>
-            </ion-header>
-            <ion-content>
-              <ion-list>
-                <ion-item>
-                  <a href="">Alterar Senha</a>
-                </ion-item>
-                <ion-item>
-                  <a href="">Mudar o e-mail</a>
-                </ion-item>
-                <ion-item>
-                  <a href="">Alterar Tema</a>
-                </ion-item>
-              </ion-list>
-            </ion-content>
-          </ng-template>
-        </ion-modal>
 
         <ion-item>
           <ion-icon name="newspaper-outline" color="dark"></ion-icon>
-          <ion-label><a>Quem Somos?</a></ion-label>
+          <ion-label class="options-menu" (click)="navegaTermos()">Termos e Serviços</ion-label>
         </ion-item>
 
         <ion-item>
           <ion-icon name="help-circle-outline" color="dark"></ion-icon>
-          <ion-label><a>Ajuda</a></ion-label>
+          <ion-label class="options-menu" (click)="navegaAjuda()">Ajuda</ion-label>
         </ion-item>
 
       </ion-list>
       <ion-button id="botao-logout" href="../../login" color="danger">
-        <ion-icon name="arrow-back-outline"></ion-icon>Sair</ion-button>
+        <ion-icon name="arrow-back-outline" id="logout"></ion-icon>Sair</ion-button>
     </ion-content>
   </ion-menu>
   
@@ -76,37 +47,37 @@
     </ion-header>
     <ion-content>
       <ion-grid>
-        <ion-row class="row-avatar">
-          <ion-col class="col-avatar">
+        <ion-row id="row-avatar">
+          <ion-col id="col-avatar">
             <ion-avatar>
               <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
             </ion-avatar>
           </ion-col>
         </ion-row>
           
-        <ion-row class="row-label">
-          <ion-col class="col-label">
+        <ion-row id="row-label">
+          <ion-col id="col-label">
             <ion-label>
-              <h2>User Name</h2>
-              <p>examplo@ong.com</p>
+              <h2 id="user-name">User Name</h2>
+              <p id="email">examplo@ong.com</p>
             </ion-label>
           </ion-col>
         </ion-row>  
 
-        <ion-row class="row-bio">
-          <ion-col class="col-bio">
-            <ion-item>Bio</ion-item>
+        <ion-row id="row-assinatura">
+          <ion-col id="col-assinatura">
+            <ion-title id="assinatura" (click)="assinatura()">Torne-se Premium</ion-title>
           </ion-col>
         </ion-row>
 
-        <ion-row class="row-botoes-data">
-          <ion-col class="col-botoes-dias">D</ion-col>
-          <ion-col class="col-botoes-dias">S</ion-col>
-          <ion-col class="col-botoes-dias">T</ion-col>
-          <ion-col class="col-botoes-dias">Q</ion-col>
-          <ion-col class="col-botoes-dias">Q</ion-col>
-          <ion-col class="col-botoes-dias">S</ion-col>
-          <ion-col class="col-botoes-dias">S</ion-col>
+        <ion-row id="row-botoes-data">
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">D</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">S</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">T</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">Q</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">Q</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">S</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">S</ion-col>
         </ion-row>
       </ion-grid>
 
