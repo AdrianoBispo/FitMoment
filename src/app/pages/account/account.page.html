@@ -76,37 +76,37 @@
     </ion-header>
     <ion-content>
       <ion-grid>
-        <ion-row class="row-avatar">
-          <ion-col class="col-avatar">
+        <ion-row id="row-avatar">
+          <ion-col id="col-avatar">
             <ion-avatar>
               <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
             </ion-avatar>
           </ion-col>
         </ion-row>
           
-        <ion-row class="row-label">
-          <ion-col class="col-label">
+        <ion-row id="row-label">
+          <ion-col id="col-label">
             <ion-label>
-              <h2>User Name</h2>
-              <p>examplo@ong.com</p>
+              <h2 id="user-name">User Name</h2>
+              <p id="email">examplo@ong.com</p>
             </ion-label>
           </ion-col>
         </ion-row>  
 
-        <ion-row class="row-bio">
-          <ion-col class="col-bio">
-            <ion-item>Bio</ion-item>
+        <ion-row id="row-assinatura">
+          <ion-col id="col-assinatura">
+            <ion-title id="assinatura" (click)="assinatura()">Torne-se Premium</ion-title>
           </ion-col>
         </ion-row>
 
-        <ion-row class="row-botoes-data">
-          <ion-col class="col-botoes-dias">D</ion-col>
-          <ion-col class="col-botoes-dias">S</ion-col>
-          <ion-col class="col-botoes-dias">T</ion-col>
-          <ion-col class="col-botoes-dias">Q</ion-col>
-          <ion-col class="col-botoes-dias">Q</ion-col>
-          <ion-col class="col-botoes-dias">S</ion-col>
-          <ion-col class="col-botoes-dias">S</ion-col>
+        <ion-row id="row-botoes-data">
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">D</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">S</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">T</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">Q</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">Q</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">S</ion-col>
+          <ion-col class="col-botoes-dias" (click)="diaSelecionado()">S</ion-col>
         </ion-row>
       </ion-grid>
 

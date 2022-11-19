@@ -1,6 +1,17 @@
+@font-face {
+  src: url('../../../theme/fonts/Poppins-Black.ttf');
+  font-family: 'Poppins-Black';    
+  font-weight: normal;
+
+  src: url('../../../theme/fonts/Poppins-Bold.ttf');
+  font-family: 'Poppins-Bold';    
+  font-weight: bold;
+
+} 
+
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
   padding-left: 7px;
 }
   
@@ -12,47 +23,83 @@ a:active {
   color: rgb(25, 221, 103);
 }
 
-ion-row {
-  ion-col {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+ion-content {
+  
+  #row-avatar {
+    #col-avatar {
+      display: flex;
+      justify-content: center;
 
-    background-color: #135d54;
-    border: solid 1px #fff;
-    color: #fff;
-    ion-avatar {
-      height: 90%;
-      width: 50%;
+      ion-avatar {
+        padding-top: 15px;
+        height: 90%;
+        width: 50%;
 
-      ion-img {
-        text-align: center;
-        position: absolute;
-      }
     }
-
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .col-bio {
-    justify-content: start;
-  }
-
-  .col-botoes-dias {
-    font-size: 20px;
-    border-radius: 30px;
-    color: #000;
-    background-color: #19dd67;
   }
 }
 
+  #row-label {
+    #col-label {
+      text-align: center;
+
+      ion-label {  
+        #user-name {
+          font-size: 20px;
+          font-family: Poppins-Bold;
+          color: #19dd67;
+        }
+      
+        #email {
+          font-size: 18px;
+          font-family: Poppins-Black;
+          color: #19dd67;
+        }
+      }
+    }
+  }
+
+  #row-assinatura {
+    padding: 10px 0px;
+    #col-assinatura {
+      justify-content: center;
+      #assinatura {
+        color: #19dd67;
+        background-color: #fff;
+        border: solid 1px #19dd67;
+        border-radius: 10px;
+        text-align: center;
+        font-family: Poppins-Bold;
+        font-size: 14px;
+        padding: 8px 0px;
+
+      }
+
+      #assinatura:hover {
+        color: #005c25;
+        border-color: #005c25;
+      }
+    }
+  }
+
+  #row-botoes-data {
+    .col-botoes-dias {
+      font-size: 13px;
+      font-family: Poppins-Bold;
+      text-align: center;
+      border: solid 1px #19dd67;
+      border-radius: 60px;
+      color: #19dd67;
+      background-color: #fff;
+      margin: 0px 3px;
+    }
+
+    .col-botoes-dias:hover {
+      color: #005c25;
+      border-color: #005c25;
+    }
+  }
+}
 
 /*@media (prefers-color-scheme: dark) {
   a {
