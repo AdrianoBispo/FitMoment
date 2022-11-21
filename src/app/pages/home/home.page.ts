@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,11 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-  public loaded = false;
+  valueSelected: any;
 
-  constructor() { }
+  constructor(router: Router) { }
 
   ngOnInit() {
+    this.valueSelected = 'todos';
+  }
+
+  segmentChanged(ev: any) {
+
+    if (ev.detail.value === 'todos') {
+      this.valueSelected = 'todos';
+    } if (ev.detail.value === 'preparatoria') {
+      this.valueSelected = 'preparatoria';
+    } if (ev.detail.value === 'compensatoria') {
+      this.valueSelected = 'compensatoria';
+    } if (ev.detail.value === 'relaxamento'){
+      this.valueSelected = 'relaxamento';
+    }
+
   }
 
 }
