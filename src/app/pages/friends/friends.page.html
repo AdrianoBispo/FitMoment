@@ -1,0 +1,57 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-segment (ionChange)="segmentChanged($event)" [value]="valueSelected" [scrollable]="true">
+        
+        <ion-segment-button value="mensagens">
+          <ion-label>Mensagens</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="adicionar">
+          <ion-label>Adicionar</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="amigos">
+          <ion-label>Amigos</ion-label>
+        </ion-segment-button>
+
+      </ion-segment>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content *ngIf="valueSelected === 'mensagens'">
+    <ion-item>
+      <ion-label>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <h2>Mensagens do Amigo</h2>
+        <p>Descrição</p>
+      </ion-label>
+    </ion-item>
+  </ion-content>
+
+  <ion-content *ngIf="valueSelected === 'adicionar'">
+    <ion-item >
+      <ion-label>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <h2>Adicionar Amigo</h2>
+        <p>Descrição</p>
+      </ion-label>
+    </ion-item>
+  </ion-content>
+
+  <ion-content *ngIf="valueSelected === 'amigos'">
+    <ion-item>
+      <ion-label>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <h2>Amigos</h2>
+        <p>Descrição</p>
+      </ion-label>
+    </ion-item>
+  </ion-content>
+</ion-app>
