@@ -31,8 +31,7 @@ const routes: Routes = [
   {
     path: 'chat',
     loadChildren: () => import('./pages/friends/chat/chat.module').then( m => m.ChatPageModule)
-  },
-
+  }
 
 ];
 

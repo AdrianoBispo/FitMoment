@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +10,7 @@ export class FriendsPage implements OnInit {
 
   valueSelected: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.valueSelected = 'mensagens';
@@ -24,6 +25,10 @@ export class FriendsPage implements OnInit {
     } if (ev.detail.value === 'amigos') {
       this.valueSelected = 'amigos';
     }
-
   }
+
+  chat() {
+    this.router.navigateByUrl('/chat');
+  }
+
 }
