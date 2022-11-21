@@ -5,7 +5,7 @@ const routes: Routes = [
 
   {
     path: 'intropage',
-    loadChildren: () => import('./intropage/intropage.module').then( m => m.IntropagePageModule)
+    loadChildren: () => import('./inital-screens/intropage/intropage.module').then( m => m.IntropagePageModule)
   },
 
   {
@@ -16,18 +16,23 @@ const routes: Routes = [
 
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./inital-screens/login/login.module').then( m => m.LoginPageModule)
   },
 
   {
     path: 'cadastro',
-    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+    loadChildren: () => import('./inital-screens/cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
 
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
+  {
+    path: 'chat',
+    loadChildren: () => import('./pages/friends/chat/chat.module').then( m => m.ChatPageModule)
+  },
+
 
 ];
 
