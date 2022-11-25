@@ -11,45 +11,14 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-modal #modal trigger="search-videos" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+  <ion-modal #modal trigger="search-videos" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]" (ionChange)="handleChange($event)">
     <ng-template>
       <ion-content>
-        <ion-searchbar placeholder="Search" (click)="modal.setCurrentBreakpoint(0.75)"></ion-searchbar>
-        <ion-list>
-          <ion-item>
-            <ion-thumbnail>
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-            </ion-thumbnail>
-            
-            <ion-label>
-              <h2>Exercício de Preparação</h2>
-              <p>Preparatória</p>
-            </ion-label>
+        <ion-searchbar placeholder="Search" (click)="modal.setCurrentBreakpoint(0.75)" ></ion-searchbar>
+          <ion-item *ngFor="let result of results">
+            <ion-icon name="search" id="icon-search"></ion-icon>
+            <ion-label>{{ result }}</ion-label>
           </ion-item>
-
-          <ion-item>
-            <ion-thumbnail>
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-            </ion-thumbnail>
-            
-            <ion-label>
-              <h2>Exercício de Compensação</h2>
-              <p>Compensatóra</p>
-            </ion-label>
-          </ion-item>
-
-          <ion-item>
-            <ion-thumbnail>
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-            </ion-thumbnail>
-            
-            <ion-label>
-              <h2>Exercício de Relaxamento</h2>
-              <p>Relaxamento</p>
-            </ion-label>
-          </ion-item>
-
-        </ion-list>
       </ion-content>
     </ng-template>
   </ion-modal>

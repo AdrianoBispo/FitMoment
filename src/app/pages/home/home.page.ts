@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class HomePage implements OnInit {
   valueSelected: any;
 
-  constructor(router: Router) { }
+  public data = ['Exercício Preparatório', 'Exercício Compensatório', 'Exercício de Relaxamento'];
+
+  public results = [...this.data];
+
+  constructor() {}
 
   ngOnInit() {
     this.valueSelected = 'todos';
@@ -27,6 +30,11 @@ export class HomePage implements OnInit {
       this.valueSelected = 'relaxamento';
     }
 
+  }
+
+  handleChange(event) {
+    const query = event.target.value.toLowerCase();
+    this.results = this.data.filter(d => d.toLowerCase().indexOf(query) > -1);
   }
 
 }
