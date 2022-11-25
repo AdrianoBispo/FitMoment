@@ -10,6 +10,10 @@ export class FriendsPage implements OnInit {
 
   valueSelected: any;
 
+  public data = ['Adrielly', 'Alex', 'Alicia', 'Biel', 'Breno', 'Bruno'];
+
+  public results = [...this.data];
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -25,6 +29,11 @@ export class FriendsPage implements OnInit {
     } if (ev.detail.value === 'amigos') {
       this.valueSelected = 'amigos';
     }
+  }
+
+  handleChange(event) {
+    const query = event.target.value.toLowerCase();
+    this.results = this.data.filter(d => d.toLowerCase().indexOf(query) > -1);
   }
 
   chat() {
