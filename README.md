@@ -1,7 +1,12 @@
 <header id="cabecario">
-  <img src="https://cdn.discordapp.com/attachments/743927816021737565/1032798299591295058/BANNERFORMS.png" width="100%" height="230px" alt="Logo FitMoment" >
-  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" align="right" >
-  <hr>
+  <h1>
+    <img src="https://github.com/AdrianoBispo/FitMoment/blob/master/src/assets/icon/logo-fitmoment.png?raw=true" align="left" height="100px" width="100px"/>
+    FitMoment
+  </h1>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" />
+  <br><br>
+  <img height="40%" width="100%" src="https://cdn.discordapp.com/attachments/743927816021737565/1045686938310549594/Fitmoment.png" alt="Logo FitMoment" >
+  
 </header>
 
 <main>
@@ -17,19 +22,18 @@
   - [📲 Aplicativo FitMomemnt](#app-fitmoment)
     - [👨🏾‍🔧 Funcionalidades](#funcionalidades)
     - [📱 Tela de Introdução](#tela-de-introducao)
-    - [📱 Tela de Login](#tela-de-login)
     - [📱 Telas Principais](#telas-principais)
 
   - [💻 Tecnologias Utilizadas](#tecnologias-utilizadas)
-    - [⏬ Instalação](#instalacao)
+    - [📲 Instalação](#instalacao)
     - [▶ Rodando App](#rodando-app)
 
-  - [👨🏾‍💻 Equipe do Projeto](#equipe)
+  - [👨🏾‍💻 Desenvolvedores](#desenvolvedores)
 
   <br>
 
   <h1 id="sobre-o-projeto">👨🏾‍🏫 Sobre o Projeto</h1>
-  <img src="https://cdn.discordapp.com/attachments/743927816021737565/1035715790969786480/ginastica_Laboral.jpg.png" height="550px" width="100%">
+  <img src="https://cdn.discordapp.com/attachments/743927816021737565/1035715790969786480/ginastica_Laboral.jpg.png" height="60%" width="100%">
   <p>
     <b>
       O projeto FitMoment, com base no ODS 3 da ONU (saúde e bem-estar), busca combater condições de desconforto em ambiente de trabalho, pelo qual, trabalhadores do         dia-a-dia passam.
@@ -57,7 +61,6 @@
   <br>
 
   <h2 id="nossa-ideia">💡 Nossa Ideia</h2>
-
   <p>
      Através de nosso aplicativo, os funcionários irão poder praticar os exercícios propostos e monitorar, para à empresa, à prática durante o período propício; com        sugestões de exercícios para problemas específicos. 
   </p>
@@ -77,7 +80,6 @@
   - Possibilita momentos de descontração, que são tão valiosos no ambiente de trabalho quanto os momentos de seriedade e profissionalismo.
   
   <br>
-  
   <h1 id="prototipo-figma">👨🏾‍🎨 Protótipo do Figma</h1>
   <img src="https://cdn.discordapp.com/attachments/743927816021737565/1035715750939332638/banner_readme.png">
   
@@ -85,67 +87,43 @@
   <br><br>
   
   <h1 id="app-fitmoment">📱 Aplicativo FitMoment</h1>
-  
   <h2 id="funcionalidades">👨🏾‍🔧 Funcionalidades</h2>
 
-  `🧑🏾 Perfil de Usuário:` Realizar cadastro dos usuários, podendo ser pacientes ou profissional de Ed. Física.
+  `👤 Perfil de Usuário:` Realizar cadastro dos usuários, podendo ser pacientes ou profissional de Ed. Física.
 
-  `🛅 Armazenamento de Dados:` Armazenar dados do usuário.
-
-  `🤝🏾 Interação entre Usuários:` Bate-papo que conecta o nosso cliente e o profissional de Ed. Física.
+  `📩 Bate-papo:` Bate-papo que conecta o nosso cliente ao profissional de Ed. Física.
+  
+  `🌗 DarkMode:` Modo escuro disponível.
+  
   <br><br>
 
   <h2 id="tela-de-introducao">📱 Tela de Introdução</h2>
-  <img src="https://cdn.discordapp.com/attachments/743927816021737565/1034652374121328661/tela-de-introducao.gif">
-  <br>
-
-  <h2 id="tela-de-login">📱 Tela de Login</h2>
-  <img src="https://cdn.discordapp.com/attachments/743927816021737565/1034652374612049930/tela-de-login.gif">
+  <img src="https://cdn.discordapp.com/attachments/743927816021737565/1047640551689834646/tela-de-login.gif">
   <br>
 
   <h2 id="telas-principais">📱 Telas Principais</h2>
-  <img src="https://cdn.discordapp.com/attachments/743927816021737565/1034652375123767427/telas-principais.gif">
+  <img src="https://cdn.discordapp.com/attachments/743927816021737565/1047640523944509490/principaisTelas.gif">
   <br><br>
 
   <h2 id="tecnologias-utilizadas">💻 Tecnologias Utilizadas</h2><br>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="angular" width="100px" height="60px"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" alt="ionic" width="100px" height="60px"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript" width="100px" height="60px"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" width="100px" height="60px"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="angular" width="10%" height="10%"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" alt="ionic" width="10%" height="10%"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript" width="10%" height="10%"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" width="10%" height="10%"/>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Cordova-logo-by-gengns.svg/800px-Cordova-logo-by-gengns.svg.png?20150803125240" 
-         alt="cordova" width="150px" height="70px"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" alt="gradle" width="100px" height="60px"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" alt="firebase" width="100px" height="60px"/>
+         alt="cordova" width="25%" height="10%"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" alt="gradle" width="10%" height="10%"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" alt="firebase" width="10%" height="10%"/>
   </div>
-  
-  <h3> Descrição:</h3>
-    
-  - `NodeJS:` Ferramenta <b>`Obrigatório`</b> para fazer a instalação de pacotes utilizando o <b>npm</b> e rodar o app.
-  
-  - `Angular:` No nosso projeto, utilizamos o `Angular` que combina a experiência principal do Ionic com as ferramentas e APIs personalizadas.
-  
-  - `Ionic:` Framework trabalhado em sala de aula e utilizado em nossa aplicação por conta de sua documentação de fácil leitura, pela quantidade de
-  APIs disponíveis e por criar aplicativos móveis de alta qualidade e desempenho usando tecnologias da Web com integrações para estruturas populares como
-  Angular, React e Vue. Nesse caso, como mencionado anteriormente, utilizamos o Angular.
-  
-  - `Typescript:` Linguagem para criação da parte lógica do projeto.
-  
-  - `Sass:` explicação...
-  
-  - `Cordova:` explicação...
-  
-  - `Gradle:` explicação...
-  
-  - `Firebase:` explicação...
   
   <br>
 
-  <h2 id="instalacao">⏬ Instalação</h2>
+  <h2 id="instalacao">📲 Instalação</h2>
+  
   <h4 id="aviso">⚠AVISO⚠</h4>
-
-  Embora o Ionic sendo uma ferramenta de desenvolvimento de app híbrido, nossa plataforma, o FitMoment, tem como foco os dispositivos Android (devido a falta de
-  estrutura). Portanto, caso você queira testa-lo em seu dispositivo iOS, haverá falta de compatibilidade.
+  Embora o Ionic sendo uma ferramenta de desenvolvimento híbrido, o FitMoment tem como foco os dispositivos Android (devido a falta de
+  estrutura). Portanto, caso você queira testa-lo em seu dispositivo iOS, haverá falta de compatibilidade. <br> <br>
 
   Para executar o app em sua máquina será necessário, primeiramente, fazer a instalação do [NodeJS](https://nodejs.org/en/), para em seguida, rodar o comando
   <b>npm</b> e fazer a instalação do <b>Ionic</b>.
@@ -161,17 +139,21 @@
   ```
   npm install -g @ionic/cli
   ```
-  Em seguida, após ter realizado a  instalação do <b>NodeJS</b> e do <b></b>Ionic faremos a instalação do <b>Cordova</b>, para que assim, possa testar em seu
-  dispositivo, ou então, em algum simulador Android.
 
-  Se quiser testar as instalações, 
+  Em seguida, após ter realizado a  instalação do <b>NodeJS</b> e do <b>Ionic</b> faremos a instalação do <b>Cordova</b>, para que assim, você possa testar em seu
+  dispositivo, ou então, em algum simulador Android. 
 
-  Então com o `npm` instalado podemos instalar o `ionic` e checar a versão:
+  Primeiro, verifique se o <b>ionic</b> foi instalado com sucesso e sua versão através do comando abaixo:
   ```
-  npm install -g @ionic/cli
   ionic --version
   ```
 
+  Em seguida iremos fazer a instalação do cordova. Para isso, basta você digitar no terminal do projeto o comando abaixo:
+  
+  ```
+  ionic cordova prepare
+  ```
+  
   <h2 id="rodando-app">▶ Rodando App</h2>
 
   Para podermos rodar o projeto no navegador(webview):
@@ -179,11 +161,10 @@
   ionic serve
   ```
   
-  Caso você queira emular a tela do iOS ou Android, recomendo utilizar o seguinte comando:
+  Caso você queira emular a tela de um dispositivo iOS ou Android, recomendo utilizar o seguinte comando:
   ```
   ionic serve -l
   ```
-  
 
   Para podermos rodar o projeto no dispositivo Android, conectado ao cabo USB, utilize o seguinte comando:
   ```
@@ -191,15 +172,11 @@
   ionic cordova run android -l
   ```
   
-  O comando abaixo com a flag `-l` permite que a cada atualização realizada no código do projeto seja atualizada no celular.
+  Com a flag `-l` no fim permite que a cada atualização realizada no código do projeto seja atualizada no celular.
   
 </main>
 
 <footer>
-  
-  <h2 id="equipe">👨🏾‍💻 Equipe do Projeto</h2>
-  
-| [<img src="https://avatars.githubusercontent.com/u/83666455?v=4" width="105px" height="105px"><br><sub>Adriano Vinícius (Programador)</sub>](https://www.linkedin.com/in/adriano-vin%C3%ADcius-bispoda-silva-85293a240/) | [<img src="https://cdn.discordapp.com/attachments/743927816021737565/1033537623379161198/IMG-20221022-WA0041.jpg" width="105px" height="105px"><br><sub>Pedro Henrique (Designer)</sub>](https://www.linkedin.com/in/pedro-henrique-125a49184/) | [<img src="https://cdn.discordapp.com/attachments/743927816021737565/1034631073172299796/IMG-20221025-WA0066.jpg" width="105px" height="105px"><br><sub>João Emanuel (Pesquisas)</sub>](https://www.instagram.com/joaoo_em/) |
-|----------|----------|----------|
-
+  <h2 id="desenvolvedores">👨🏾‍💻 Desenvolvedores</h2>
+  <img src="https://media.discordapp.net/attachments/743927816021737565/1047213115839877211/desenvolvedores.png?width=1440&height=560"/>
 </footer>
