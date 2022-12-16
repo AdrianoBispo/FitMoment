@@ -3,7 +3,7 @@
     <img src="https://github.com/AdrianoBispo/FitMoment/blob/master/src/assets/icon/logo-fitmoment.png?raw=true" align="left" height="100px" width="100px"/>
     FitMoment
   </h1>
-  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" />
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=PROJETO%20ENTREGUE&color=RED&style=for-the-badge" />
   <br><br>
   <img height="40%" width="100%" src="https://cdn.discordapp.com/attachments/743927816021737565/1045686938310549594/Fitmoment.png" alt="Logo FitMoment" >
   
