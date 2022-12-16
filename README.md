@@ -36,7 +36,7 @@
   <img src="https://cdn.discordapp.com/attachments/743927816021737565/1035715790969786480/ginastica_Laboral.jpg.png" height="60%" width="100%">
   <p>
     <b>
-      O projeto FitMoment, com base no ODS 3 da ONU (saúde e bem-estar), busca combater condições de desconforto em ambiente de trabalho, pelo qual, trabalhadores do         dia-a-dia passam.
+      O projeto FitMoment, foi desenvolvido pelos estudantes do 3° ano do ensino médio/técnico da <a href="https://www.instagram.com/eteportodigital/">ETE Porto Digital</a> com base no ODS 3 da ONU (Saúde e Bem-estar), buscando combater condições de desconforto em ambiente de trabalho, pelo qual, trabalhadores do dia-a-dia passam. O projeto foi desenvolvido como trabalho final para a disciplina "Projeto Integrador 3" e entregue no dia 04/12/2022.
     </b>
   </p>
 
