@@ -6,10 +6,12 @@
   <img src="http://img.shields.io/static/v1?label=STATUS&message=PROJETO%20ENTREGUE&color=RED&style=for-the-badge" />
   <br><br>
   <img height="40%" width="100%" src="https://cdn.discordapp.com/attachments/743927816021737565/1045686938310549594/Fitmoment.png" alt="Logo FitMoment" >
-  <a href="https://drive.google.com/file/d/1XLUNBx9ulMt4jCXYJUJfLf-p5mEPkRAZ/view">APK do Projeto</a>
+  <a href="https://drive.google.com/file/d/1XLUNBx9ulMt4jCXYJUJfLf-p5mEPkRAZ/view">Baixe Aqui o APK</a> | 
+  <a href="https://drive.google.com/file/d/1ThV2Y_jd3fHjyFf5a8lThpjCgeGieblO/view?usp=share_link">Apresentação Final do Projeto</a> | 
+  <a href="https://termos-fitmoment.vercel.app/index.html">Site dos Termos e Serviços</a>
   
 </header>
-
+<br><br>
 <main>
   <h3 id="topicos">📜 Tópicos</h3>
 
